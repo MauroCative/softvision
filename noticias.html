@@ -4,122 +4,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+
+    <title>Noticias | Institución Educativa Innovadores del Futuro</title>
+
     <link rel="stylesheet" href="css/estilosgnrls.css">
     <link rel="icon" type="image/x-icon" href="img/icono.png">
-
 </head>
 
 <body class="body_noticias">
 
+    <!-- Encabezado principal -->
     <header>
-        <img src="img/logoie.png" alt="Logo de la Institución Educativa" class="logo">
-        <h1 class="nombreie">Institución Educativa Innovadores del Futuro</h1>
+        <img 
+            src="img/logoie.png" 
+            alt="Logo de la Institución Educativa Innovadores del Futuro" 
+            class="logo"
+        >
+
+        <h1 class="nombreie">
+            Institución Educativa Innovadores del Futuro
+        </h1>
     </header>
-    <nav>
+
+    <!-- Menú de navegación principal -->
+    <nav aria-label="Navegación principal">
         <ul class="menu" id="menu">
-            <li><a href="index2.html">Inicio</a></li>
-            <li class="submenu"><a href="nosotros.html">Nosotros &#9662;</a>
+
+            <li>
+                <a href="index2.html">Inicio</a>
+            </li>
+
+            <li class="submenu">
+                <a href="nosotros.html">
+                    Nosotros &#9662;
+                </a>
+
                 <ul class="submenu-items">
-                    <li><a href="nosotros.html#historia">Historia</a></li>
-                    <li><a href="nosotros.html#mision">Misión</a></li>
-                    <li><a href="nosotros.html#vision">Visión</a></li>
-                    <li><a href="nosotros.html#instalaciones">Instalaciones</a></li>
+                    <li>
+                        <a href="nosotros.html#historia">Historia</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html#mision">Misión</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html#vision">Visión</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html#instalaciones">
+                            Instalaciones
+                        </a>
+                    </li>
                 </ul>
             </li>
 
-            <li class="submenu"><a href="programa_academico.html">Programas Académicos &#9662;</a>
+            <li class="submenu">
+                <a href="programa_academico.html">
+                    Programas Académicos &#9662;
+                </a>
+
                 <ul class="submenu-items">
-                    <li><a href="programa_academico_preescolar.html">Preescolar</a></li>
-                    <li><a href="programa_academico_primaria.html">Primaria</a></li>
-                    <li><a href="programa_academico_bachillerato.html">Bachillerato</a></li>
+                    <li>
+                        <a href="programa_academico_preescolar.html">
+                            Preescolar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programa_academico_primaria.html">
+                            Primaria
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programa_academico_bachillerato.html">
+                            Bachillerato
+                        </a>
+                    </li>
                 </ul>
             </li>
 
-            <li><a href="servicios.html">Servicios</a></li>
+            <li>
+                <a href="servicios.html">Servicios</a>
+            </li>
 
-            <li><a href="noticias.html">Noticias</a></li>
+            <li>
+                <a href="noticias.html" aria-current="page">
+                    Noticias
+                </a>
+            </li>
 
-            <li><a href="contactos.html">Contacto</a></li>
+            <li>
+                <a href="contactos.html">Contacto</a>
+            </li>
+
         </ul>
     </nav>
-    <section class="noticias">
 
-        <h1>Noticias Institucionales</h1>
+    <!-- Contenido principal de noticias -->
+    <main class="noticias">
 
-        <article class="noticia">
-
-            <h2>Feria de Ciencia e Innovación 2026</h2>
-
-            <time datetime="2026-05-15">15 de mayo de 2026</time><br>
-
-            <img src="img/noticia1.png" alt="Feria de Ciencia e Innovación">
-
+        <header class="noticias-header">
+            <h2>Noticias Institucionales</h2>
             <p>
-                Los estudiantes de bachillerato participaron en la Feria de Ciencia e Innovación,
-                presentando proyectos relacionados con robótica, energías renovables y desarrollo
-                sostenible. La actividad fortaleció el pensamiento crítico y el trabajo en equipo.
+                Conoce las actividades, eventos y acontecimientos más importantes
+                de nuestra comunidad educativa.
             </p>
+        </header>
 
-        </article>
+        <!-- Lista de noticias -->
+        <section class="lista-noticias" aria-label="Noticias institucionales">
 
-        <article class="noticia">
+            <!-- Noticia 1 -->
+            <article class="noticia">
+                <header>
+                    <h3>Feria de Ciencia e Innovación 2026</h3>
 
-            <h2>Jornada Deportiva Intercursos</h2>
+                    <time datetime="2026-05-15">
+                        15 de mayo de 2026
+                    </time>
+                </header>
 
-            <time datetime="2026-04-28">28 de abril de 2026</time><br>
-            <img src="img/noticia2.png" alt="Jornada Deportiva">
+                <figure>
+                    <img 
+                        src="img/noticia1.png"
+                        alt="Estudiantes participando en la Feria de Ciencia e Innovación"
+                    >
+                    <figcaption>
+                        Feria de Ciencia e Innovación 2026.
+                    </figcaption>
+                </figure>
 
-            <p>
-                La Institución Educativa Innovadores del Futuro realizó una jornada deportiva
-                que reunió a estudiantes de todos los grados en competencias de fútbol,
-                baloncesto y atletismo, promoviendo hábitos de vida saludable y compañerismo.
-            </p>
+                <p>
+                    Los estudiantes de bachillerato participaron en la Feria de
+                    Ciencia e Innovación, presentando proyectos relacionados con
+                    robótica, energías renovables y desarrollo sostenible.
+                    La actividad fortaleció el pensamiento crítico y el trabajo
+                    en equipo.
+                </p>
+            </article>
 
-        </article>
+            <!-- Noticia 2 -->
+            <article class="noticia">
+                <header>
+                    <h3>Jornada Deportiva Intercursos</h3>
 
-        <article class="noticia">
+                    <time datetime="2026-04-28">
+                        28 de abril de 2026
+                    </time>
+                </header>
 
-            <h2>Semana Cultural y Artística</h2>
+                <figure>
+                    <img 
+                        src="img/noticia2.png"
+                        alt="Estudiantes participando en la Jornada Deportiva Intercursos"
+                    >
+                    <figcaption>
+                        Jornada Deportiva Intercursos.
+                    </figcaption>
+                </figure>
 
-            <time datetime="2026-03-10">10 de marzo de 2026</time><br>
+                <p>
+                    La Institución Educativa Innovadores del Futuro realizó una
+                    jornada deportiva que reunió a estudiantes de todos los
+                    grados en competencias de fútbol, baloncesto y atletismo,
+                    promoviendo hábitos de vida saludable y compañerismo.
+                </p>
+            </article>
 
-            <img src="img/noticia3.png" alt="Semana Cultural">
+            <!-- Noticia 3 -->
+            <article class="noticia">
+                <header>
+                    <h3>Semana Cultural y Artística</h3>
 
-            <p>
-                Durante la Semana Cultural, los estudiantes demostraron sus talentos en música,
-                danza, pintura y teatro. El evento contó con la participación de padres de
-                familia y docentes, fortaleciendo la integración de toda la comunidad educativa.
-            </p>
+                    <time datetime="2026-03-10">
+                        10 de marzo de 2026
+                    </time>
+                </header>
 
-        </article>
+                <figure>
+                    <img 
+                        src="img/noticia3.png"
+                        alt="Estudiantes participando en actividades de la Semana Cultural y Artística"
+                    >
+                    <figcaption>
+                        Semana Cultural y Artística.
+                    </figcaption>
+                </figure>
 
-    </section>
+                <p>
+                    Durante la Semana Cultural, los estudiantes demostraron sus
+                    talentos en música, danza, pintura y teatro. El evento contó
+                    con la participación de padres de familia y docentes,
+                    fortaleciendo la integración de toda la comunidad educativa.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
     <footer>
         <div class="footer">
+
             <div class="footer_nombre">
-                <p>INSTITUCION EDUCATIVA INNOVADORES DEL FUTURO</p>
+                <p>
+                    INSTITUCIÓN EDUCATIVA INNOVADORES DEL FUTURO
+                </p>
             </div>
 
             <div class="footer_redes">
-                <a href="https://www.facebook.com" target="_blank"><img src="img/iconofacebook.png" alt="Facebook"
-                        class="icono-red"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="img/iconoinstagram.png" alt="Instagram"
-                        class="icono-red"></a>
-                <a href="https://www.whatsapp.com" target="_blank"><img src="img/iconowhatsapp.png" alt="Twitter"
-                        class="icono-red"></a>
+                <a 
+                    href="https://www.facebook.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visitar Facebook de la institución"
+                >
+                    <img 
+                        src="img/iconofacebook.png"
+                        alt="Facebook"
+                        class="icono-red"
+                    >
+                </a>
+
+                <a 
+                    href="https://www.instagram.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visitar Instagram de la institución"
+                >
+                    <img 
+                        src="img/iconoinstagram.png"
+                        alt="Instagram"
+                        class="icono-red"
+                    >
+                </a>
+
+                <a 
+                    href="https://www.whatsapp.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contactar por WhatsApp"
+                >
+                    <img 
+                        src="img/iconowhatsapp.png"
+                        alt="WhatsApp"
+                        class="icono-red"
+                    >
+                </a>
             </div>
 
             <div class="footer_contacto">
                 <h3>Contacto</h3>
-                <ul>
-                    <li> Direccion: Carrera 15 No. 45 - 80</li>
-                    <li> Teléfono: 300 000 0000</li>
-                    <li> Correo: contacto@innovadoresdelfuturo.edu.co</li>
-                </ul>
+
+                <address>
+                    <ul>
+                        <li>Dirección: Carrera 15 No. 45 - 80</li>
+                        <li>Teléfono: 300 000 0000</li>
+                        <li>
+                            Correo:
+                            contacto@innovadoresdelfuturo.edu.co
+                        </li>
+                    </ul>
+                </address>
             </div>
+
         </div>
     </footer>
+
 </body>
 
 </html>
