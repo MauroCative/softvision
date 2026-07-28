@@ -569,47 +569,244 @@ p {
 }
 
 /*pantalla servicios*/
-.body_servicios {
-    background-color: lightblue;
+/*=========================================
+            PÁGINA SERVICIOS
+=========================================*/
+
+.body_servicios{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom,#eef4fb,#ffffff);
 }
 
-.servicios h2 {
-    font-size: 62px;
+/*=============================
+        CONTENEDOR
+==============================*/
+
+.servicios{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.servicios h2{
     text-align: center;
-    color: rgb(4, 4, 90);
-    padding: 20px;
+    font-size: 2.6rem;
+    color: #003366;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.tarjeta_servicio {
+.servicios h2::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #1d75d1;
+    display: block;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+
+/*=============================
+        TARJETAS
+==============================*/
+
+.contenedor_servicios{
     display: flex;
-    margin: 20px;
+    flex-direction: column;
+    gap: 35px;
 }
 
-.tarjeta_servicio img {
-    width: 700px;
-    height: auto;
+.tarjeta_servicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    transition: .4s;
+}
+
+.tarjeta_servicio:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.18);
+}
+
+.tarjeta_servicio img{
+    width: 320px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.tarjeta_servicio:hover img{
+    transform: scale(1.05);
+}
+
+.tarjeta_servicio div{
+    flex: 1;
+}
+
+.tarjeta_servicio h3{
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.tarjeta_servicio p{
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/*=============================
+        VIDEO
+==============================*/
+
+.video_institucional{
+    margin-top: 70px;
+    background: white;
     border-radius: 20px;
-}
-
-.tarjeta_servicio h3 {
-    font-size: 60px;
-}
-
-.tarjeta_servicio p {
-    font-size: 30px;
-}
-
-/*ajuste video*/
-.video_institucional {
+    padding: 45px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
 }
 
-.video_institucional iframe {
-    margin: 30px;
-    border-radius: 20px;
-    width: 800px;
-    height: 600px;
+.video_institucional h2{
+    margin-bottom: 30px;
 }
+
+.video{
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 15px 30px rgba(0,0,0,.20);
+}
+
+/*=============================
+        FOOTER
+==============================*/
+
+footer{
+    margin-top: 80px;
+    background: #00264d;
+    color: white;
+}
+
+.footer{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer_nombre{
+    flex: 1;
+}
+
+.footer_nombre p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer_redes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono-red{
+    width: 48px;
+    transition: .3s;
+}
+
+.icono-red:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.footer_contacto{
+    flex: 1;
+}
+
+.footer_contacto h3{
+    color: #4da6ff;
+    margin-bottom: 15px;
+}
+
+.footer_contacto ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer_contacto li{
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/*=============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+    .tarjeta_servicio{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tarjeta_servicio img{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .tarjeta_servicio p{
+        text-align: center;
+    }
+
+    .video{
+        height: 350px;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .servicios h2{
+        font-size: 2rem;
+    }
+
+    .tarjeta_servicio{
+        padding: 20px;
+    }
+
+    .tarjeta_servicio h3{
+        font-size: 1.5rem;
+    }
+
+    .video{
+        height: 240px;
+    }
+
+}
+
 
 /*pantalla de noticias*/
 /* ============================
